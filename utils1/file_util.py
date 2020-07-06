@@ -133,7 +133,7 @@ def get_outfile(infile, outfile):
 
 if __name__ == '__main__':
     path_array = []
-    path = "D:\\software\\PyCharm 2019.3.2\\PythonProjects\\learn-python\\commonUtils\\神奇的PDF.pdf"
+    path = 'D:\\software\\PyCharm 2019.3.2\\PythonProjects\\learn-python\\files\神奇的PDF.pdf'
     save_image_path = "C:\\Users\\wmh\\Desktop\\"
     base_name = os.path.basename(path)
     shutil.copyfile(path, save_image_path + base_name)

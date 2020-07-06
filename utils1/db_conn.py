@@ -8,7 +8,9 @@ connect = pymysql.connect(
     database='test1_ats',
     charset='utf8'
 )
+
 cursor = connect.cursor()
+
 sql = 'insert into student (name, age) values(%s,%s);'
 
 data = [
