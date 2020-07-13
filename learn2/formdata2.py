@@ -4,6 +4,10 @@ import json
 
 content = input("请输入翻译的内容:")
 
+# 因为有道翻译有反爬虫机制，所以简单的爬肯定不行，修改一下url，去掉_o
+# 现在的url：http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule
+# 原来的url：http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule　
+
 url = 'http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule'
 data = {}
 
