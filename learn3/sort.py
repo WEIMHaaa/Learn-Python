@@ -35,6 +35,7 @@ dbname_list_2=('test2_demo test2_gdp test2_wcs test2_yht test2_cfg test2_tcb tes
 
 dbname_list_3=('dev1_demo dev1_gdp dev1_wcs dev1_yht dev1_cfg dev1_tcb dev1_amp dev1_aut dev1_bcs dev1_bsf dev1_bss dev1_css dev1_ctr dev1_cts dev1_dst dev1_ell dev1_irs dev1_jos dev1_mfs dev1_mqa dev1_nps dev1_ntf dev1_pts dev1_phs dev1_rcf dev1_res dev1_tcs dev1_uts wcs dev1_gow dev1_lms dev1_ocr dev1_mds')
 
+app_list=('ats sso ams app-front aus b2b-front irs mfs cts mos mbs wcs aut bsf bss mqx ntf scheduler amp pts ell jos res phs gow')
 
 # 1、数组排序
 def arr_sort(arr):
@@ -44,21 +45,13 @@ def arr_sort(arr):
 
 # 2、根据空格分割数组
 def arr_split(arr):
-    new_arr = dbname_list_2.split(" ")
+    new_arr = arr.split(" ")
     print("分割后：")
     print(new_arr)
     arr_sort(new_arr)
 
 
 if __name__ == '__main__':
-    print('dbname_list_1')
-    arr_sort(dbname_list_1)
-    print('\n')
-
-    print('dbname_list_2')
-    arr_split(dbname_list_2)
-    print('\n')
-
-    print('dbname_list_3')
-    arr_split(dbname_list_3)
+    print('app_list:')
+    arr_split(app_list)
     print('\n')
