@@ -35,7 +35,9 @@ dbname_list_2=('test2_demo test2_gdp test2_wcs test2_yht test2_cfg test2_tcb tes
 
 dbname_list_3=('dev1_demo dev1_gdp dev1_wcs dev1_yht dev1_cfg dev1_tcb dev1_amp dev1_aut dev1_bcs dev1_bsf dev1_bss dev1_css dev1_ctr dev1_cts dev1_dst dev1_ell dev1_irs dev1_jos dev1_mfs dev1_mqa dev1_nps dev1_ntf dev1_pts dev1_phs dev1_rcf dev1_res dev1_tcs dev1_uts wcs dev1_gow dev1_lms dev1_ocr dev1_mds')
 
-app_list=('ats sso ams app-front aus b2b-front irs mfs cts mos mbs wcs aut bsf bss mqx ntf scheduler amp pts ell jos res phs gow')
+app_list_1=('ats sso ams aws app-front aus b2b-front irs mfs cts mos mbs wcs aut bsf bss mqx ntf scheduler amp pts ell jos res phs gow')
+
+app_list=('disconf cts aut ams bss scheduler ccs eam rms cts bsf sso app-front b2b-front ntf')
 
 # 1、数组排序
 def arr_sort(arr):
