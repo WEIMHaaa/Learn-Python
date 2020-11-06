@@ -44,7 +44,10 @@ app_list_1=('ats sso ams aws app-front aus b2b-front irs mfs cts mos mbs wcs aut
 app_list_2=('disconf cts aut ams bss scheduler ccs eam rms cts bsf sso app-front b2b-front ntf')
 
 
-app_list=('ats sso ams app-front aus b2b-front irs mfs cts mos mbs wcs aut bsf bss mqx ntf scheduler amp pts ell jos res phs gow')
+app_list_3=('ats sso ams app-front aus b2b-front irs mfs cts mos mbs wcs aut bsf bss mqx ntf scheduler amp pts ell jos res phs gow')
+
+app_list=('ams app-front aut b2b-front bsf bss ccs cts disconf eam ntf rms scheduler sso css pcs irs pls')
+
 
 # 1、数组排序
 def arr_sort(arr):
@@ -61,6 +64,6 @@ def arr_split(arr):
 
 
 if __name__ == '__main__':
-    print('app_list_2:')
-    arr_split(app_list_2)
+    print('app_list:')
+    arr_split(app_list)
     print('\n')
