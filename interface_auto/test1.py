@@ -29,18 +29,17 @@ def login():
         response = json.dumps(resp_json, ensure_ascii=False)
         # 将响应结果写入token.json
         f.write(response)
+    
+    return resp 
 
 def get_token_1():
-    path = '/loginByAjax'
-    url = ''.join([host, path])
-    params = {'uname': 'w00736', 'pwd': 'Wmh123456.'}
-    resp = requests.get(url, params=params)
-
-    resp_str = str(resp.json())
+    # login() 直接调用login()的返回值
+    resp_str = str(login().json())
     token = re.findall(r"TOKEN:(.+?)'}", resp_str)
     # 将数组转换为字符串
     TOKEN = ','.join(token)
     print(TOKEN)
+
 
 def get_token_2():
     print('哈哈哈')
