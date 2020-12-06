@@ -1,4 +1,4 @@
-import requests
+import interface_auto
 
 formdata = {
     "type": "AUTO",
@@ -16,7 +16,7 @@ url = "http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule"
 headers = {
     "User-Agent": "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"}
 
-response = requests.post(url, data=formdata, headers=headers)
+response = interface_auto.post(url, data=formdata, headers=headers)
 
 print(response.text)
 
