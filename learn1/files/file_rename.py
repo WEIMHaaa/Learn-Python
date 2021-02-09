@@ -14,7 +14,7 @@ def ReFileName(dirPath,pattern):
         # 判断是否是文件
         if os.path.isfile(os.path.join(dirPath, file)) == True:
             # 用正则匹配，去掉不需要的词
-            newName = re.sub(pattern, "", file)
+            newName = re.sub(pattern, "bb", file)
             # 设置新文件名
             newFilename = file.replace(file, newName)
             # 重命名
