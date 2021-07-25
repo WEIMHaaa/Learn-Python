@@ -20,10 +20,11 @@ class Test(object):
                 raise
 
 
-a = Test(True)
-a.calc(11, 0)
+if __name__ == '__main__':
+    a = Test(True)
+    a.calc(11, 0)
 
-print("----------------------华丽的分割线----------------")
+    print("----------------------华丽的分割线----------------")
 
-a.switch = False
-a.calc(11, 0)
+    a.switch = False
+    a.calc(11, 0)

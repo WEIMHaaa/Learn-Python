@@ -26,13 +26,13 @@ html_content = '''
 '''
 html = MIMEText(html_content, 'html', 'utf-8')
 msgAtv.attach(html)
-f = open('../files/桌面背景.png', 'rb')
+f = open('../../files/桌面背景.png', 'rb')
 msgImage = MIMEImage(f.read())
 f.close()
 msgImage.add_header('Content-ID', '<image>')
 msgRoot.attach(msgImage)
 # 附件
-annex = MIMEText(open('../files/test.txt', 'rb').read(), 'base64', 'utf-8')
+annex = MIMEText(open('../../files/test.txt', 'rb').read(), 'base64', 'utf-8')
 annex['Content-Type'] = 'application/octet-stream'
 annex['Content-Disposition'] = 'attachment; filename="test.txt"'
 msgRoot.attach(annex)

@@ -1,7 +1,8 @@
 import os
 
-
 from win32com import client
+
+from base.utils import path
 
 
 def doc2pdf(wordpath, pdfpath):
@@ -29,8 +30,7 @@ def doc2pdf(wordpath, pdfpath):
 
 
 if __name__ == '__main__':
-    # wordpath = "D:\\software\\PythonProjects\\Learn-Python\\files"  # word存放路径
-    # pdfpath = "D:\\software\\PythonProjects\\Learn-Python\\files"  # word转PDF后存放路径
+    print("当前路径：", path.get_pwd())
 
     filespath = os.path.abspath('../../files');
     print(filespath);

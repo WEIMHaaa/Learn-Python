@@ -34,6 +34,7 @@ def zero4():
     finally:
         print('一定要打印出来！')
 
+
 if __name__ == '__main__':
     zero1()
     zero2()
