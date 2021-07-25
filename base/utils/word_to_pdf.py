@@ -32,6 +32,6 @@ if __name__ == '__main__':
     # wordpath = "D:\\software\\PythonProjects\\Learn-Python\\files"  # word存放路径
     # pdfpath = "D:\\software\\PythonProjects\\Learn-Python\\files"  # word转PDF后存放路径
 
-    filespath = os.path.abspath('../files');
+    filespath = os.path.abspath('../../files');
     print(filespath);
     doc2pdf(filespath, filespath)

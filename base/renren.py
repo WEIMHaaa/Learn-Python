@@ -1,7 +1,7 @@
-import interface_auto
+import interface
 
 # 1\. 创建session对象，可以保存Cookie值
-ssion = interface_auto.session()
+ssion = interface.session()
 
 # 2\. 处理 headers
 headers = {
