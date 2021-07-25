@@ -6,6 +6,7 @@
 str = 'abcdefg'
 
 print(str[0])
+
 print(str[1])
 
 # 取下标为2~3 的字符

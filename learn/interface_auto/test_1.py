@@ -7,24 +7,24 @@ import re
 
 import requests
 
-host = 'https://jly-omsdev.tc-lawtech.com'
+host = 'https://omstest2.jiuliyuntech.com/'
 
 
 def demo():
-    url = 'https://jly-omsdev.tc-lawtech.com'
+    url = 'https://omstest2.jiuliyuntech.com/'
     url_resp = requests.get(url)
     print(url_resp.text)
 
 def login():
     path = '/loginByAjax'
     url = ''.join([host, path])
-    params = {'uname': 'w00736', 'pwd': 'Wmh123456.'}
+    params = {'uname': 'bis', 'pwd': 'bis@2021'}
     resp = requests.get(url, params=params)
 
     userId = resp.json()['data']['userId']
     resp_json = resp.json()
 
-    with open("./token.json", "w") as f:
+    with open("token.json", "w") as f:
         # json.dumps将字典形式的数据转化为字符串 ; ensure_ascii=False 防止Unicode格式被转换
         response = json.dumps(resp_json, ensure_ascii=False)
         # 将响应结果写入token.json
@@ -43,7 +43,7 @@ def get_token_1():
 
 def get_token_2():
     print('哈哈哈')
-    with open('./token.json', 'r') as f:
+    with open('token.json', 'r') as f:
         # str()将json转换为字符串 ; json.load()用于从json文件中读取数据
         data = str(json.load(f))
         # 正则表达式获取TOKEN
@@ -54,5 +54,7 @@ def get_token_2():
 
 
 if __name__ == '__main__':
+    # demo()
+    # login()
     get_token_1()
 
