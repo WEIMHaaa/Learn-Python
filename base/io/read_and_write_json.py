@@ -10,12 +10,12 @@ import json
 
 def write_json():
     data = {"name": "张艺兴", "job": "歌手"}
-    with open('data.json', 'w') as f:
+    with open('../../files/data.json', 'w') as f:
         json.dump(data, f, ensure_ascii=False)
 
 
 def read_json():
-    with open('data.json', 'r') as f:
+    with open('../../files/data.json', 'r') as f:
         data = json.loads(f)
         print(data)
 
