@@ -10,7 +10,7 @@ def wirte_to_csv():
     # data为需要写入的数据,使用字典格式，key为列名，values为每一行的内容
     data = {
         "name": "张艺兴",  # string直接写入即可
-        "age": [123],  # int类型需要使用[]括起来
+        "age": [123],     # int类型需要使用[]括起来
         "sex": "男",
         "other": "其它信息"
     }

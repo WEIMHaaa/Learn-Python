@@ -7,4 +7,14 @@
     <orderEntry type="jdk" jdkName="Python 3.7 (Learn-Python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/base/exception" />
+        <option value="$MODULE_DIR$/base/interfacedemo" />
+        <option value="$MODULE_DIR$/base/mail" />
+        <option value="$MODULE_DIR$/base/oop" />
+      </list>
+    </option>
+  </component>
 </module>
