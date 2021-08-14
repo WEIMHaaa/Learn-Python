@@ -66,4 +66,5 @@ class TestCase:
 
 if __name__ == '__main__':
     # -s表示输出详细响应信息,如果不加-s则成功接口信息不会打印出来,失败接口信息才会打印出来
-    pytest.main(['test_case.py', '-s'])
+    pytest.main(['test_case.py'])
+    # pytest.main(['test_case.py', '-s'])
